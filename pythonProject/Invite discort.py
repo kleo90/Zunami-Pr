@@ -8,7 +8,7 @@ intents = discord.Intents.all()
 intents.members = True  # Subscribe to the privileged members intent.
 client = discord.Client(intents=intents)
 
-token = 'OTE4MTE0MjQ4NjE2NDYwMzE4.YbCihg.TJ7zl2BWNUX4WJ0tJYAIzT5nvvo'
+token = 'token'
 
 @client.event
 async def on_ready():
