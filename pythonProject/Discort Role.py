@@ -2,9 +2,9 @@ import discord
 
 import gspread
 
-gc = gspread.service_account(filename=r"C:\Users\Ксюша\Downloads\discort-zunami-c27a701ced9a.json")
+gc = gspread.service_account(filename=r"C:\Users\Ксюша\Downloads\.json")
 
-sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1wopeeTtEfGewfQD30AVx27RXLqk4UoXd-AAnUl4UGZE/edit#gid=0')
+sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/')
 worksheet = sht2.get_worksheet(0)
 values_list = worksheet.col_values(1)
 values_list1= worksheet.col_values(2)
