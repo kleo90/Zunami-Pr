@@ -82,13 +82,3 @@ df10=df.loc[df['Action']=='Write a review/article']
 df10 = df10[['Email','Details','Discord Handle','Date']]
 set_with_dataframe(worksheet10,df10,next_available_row(worksheet10),include_column_header=False)
 
-
-#dh = pd.read_csv(r"C:\Users\Ксюша\Downloads\the-zunami-protocol-ambassador-program-p_export.csv",sep=',')
-#dh['When'] = pd.to_datetime(dh['When'])
-#df=df.drop(df[(df['When']<='2021-12-19 00:00:00')].index)
-#df=df.drop(df[(df['When']>='2021-12-25 00:00:00')].index)
-#set_with_dataframe(worksheet11,dh,next_available_row(worksheet11),include_column_header=False)
-
-
-
-
