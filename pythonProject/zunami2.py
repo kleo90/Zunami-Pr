@@ -33,7 +33,7 @@ worksheet11 = sht3.worksheet("USER")
 worksheet12 = sht3.worksheet("insagram")
 
 
-df = pd.read_csv(r"C:\Users\Ксюша\Downloads\the-zunami-protocol-ambassador-program-p_export.csv",sep=',')
+df = pd.read_csv(r"C:\the-zunami-protocol-ambassador-program-p_export.csv",sep=',')
 df['When'] = pd.to_datetime(df['When'])
 #df=df.drop(df[(df['When']<='2021-12-19 00:00:00')].index)
 #df=df.drop(df[(df['When']>='2021-12-25 00:00:00')].index)
