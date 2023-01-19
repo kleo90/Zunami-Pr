@@ -9,16 +9,16 @@ def next_available_row(sheet, cols_to_sample=2):
   return max([cell.row for cell in cols if cell.value]) + 1
 
 
-gc = gspread.service_account(filename=r"C:\Users\Ксюша\Downloads\discort-zunami-c27a701ced9a.json")
+gc = gspread.service_account(filename=r"C:\Users\Ксюша\Downloads\.json")
 
-sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1lDJmHinja4nMis2RUsX2QBWAzVqaW8u0TdMWUZdhuqU/edit#gid=1595412167')
+sht2 = gc.open_by_url('https://docs.google.com/spreadsheets/')
 worksheet = sht2.worksheet("Ответы на google-форму")
 values_list = worksheet.col_values(3) #mail Ответы на google-форму
 values_list1= worksheet.col_values(6) #id Ответы на google-форму
 
 
 
-sht3 = gc.open_by_url('https://docs.google.com/spreadsheets/d/19uW05thc6wBRnwbS10hj0cHT_jWP1kQE42ezkKeyG-g/edit#gid=304515503')
+sht3 = gc.open_by_url('https://docs.google.com/spreadsheets/d/')
 worksheet1 = sht3.worksheet("Arts & Stickerpacks (Gleam)")
 worksheet2 = sht3.worksheet("Memes (Gleam)")
 worksheet3 = sht3.worksheet("twitter")
