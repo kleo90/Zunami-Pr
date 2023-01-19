@@ -2,9 +2,9 @@ from telethon import TelegramClient
 import pandas as pd
 
 
-api_id = 197391
+api_id = 111111
 api_hash = 'token'
-phone = '+79851254556'
+phone = '+78121231212'
 channel_href = 'https://t.me/testnikc'
 
 client = TelegramClient(None, api_id, api_hash)
