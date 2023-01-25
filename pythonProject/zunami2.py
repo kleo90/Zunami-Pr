@@ -61,7 +61,7 @@ df.to_excel('df.xlsx',index=False)
 #Вставка данных по вкладкам
 df1=df[df['Action']=='Create artworks for socials. Post them on your social networks and Discord']
 df1 = df1[['Email','Details','Discord Handle','Date']]
-set_with_dataframe(worksheet1,df1,next_available_row(worksheet1),include_column_header=False) # THIS EXPORTS YOUR DATAFRAME TO THE GOOGLE SHEET
+set_with_dataframe(worksheet1,df1,next_available_row(worksheet1),include_column_header=False) 
 
 df2=df.loc[df['Action']=='Create memes about Zunami and Sharky on Twitter']
 df2 = df2[['Email','Details','Discord Handle','Date']]
