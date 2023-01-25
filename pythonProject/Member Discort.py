@@ -3,7 +3,7 @@ import pandas as pd
 
 
 intents = discord.Intents.all()
-intents.members = True  # Subscribe to the privileged members intent.
+intents.members = True 
 client = discord.Client(intents=intents)
 
 token = 'token'
